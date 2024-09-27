@@ -233,6 +233,25 @@ def update():
         updateGtime()
     else:
         print('Invaild option')
+while True:
+    print("""1......write/clear all
+    2......display
+    3......add record
+    4......search
+    5......update record""")
+    a=int(input("enter your choice"))
+    if a==1:
+        write()
+    if a==2:
+        read()
+    elif a==3:
+        append()
+    elif a==4:
+        search()
+    elif a==5:
+        update()
+    else:
+        print("invalid choice")
     
         
 
