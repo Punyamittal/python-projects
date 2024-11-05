@@ -1,0 +1,14 @@
+import random
+a=int(input("enter lower limit"))
+b=int(input("enter upper limit"))
+s=random.randint(a,b+1)
+f=1
+while f==1:
+    n=int(input("enter the guess"))
+    if n==s:
+        print("congratulations u won")
+        f=0
+    elif n>s:
+        print("number is lower than the guess")
+    else:
+        print("number is greater than the guess")
