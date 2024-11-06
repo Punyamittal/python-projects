@@ -1,0 +1,21 @@
+import random
+print('Winning rules of the game ROCK PAPER SCISSORS are:\n'
+      , "Rock vs Paper -> Paper wins \n"
+      , "Rock vs Scissors -> Rock wins \n"
+      , "Paper vs Scissors -> Scissors wins \n")
+l=["rock","paper","scissors"]
+print(" 1....rock \n",
+      "2....paper \n",
+      "3....scissor")
+a=int(input("enter choice"))-1
+m=l[a]
+print("your choice is",m)
+n=random.choice(l)
+print("computer's choice is",n)
+rules = {'rock': 'scissors','scissors': 'paper', 'paper': 'rock'}
+if m == n:
+    print("It's a tie!")
+elif rules[m] == n:
+    print("Player wins!")
+else:
+    print("computer wins!")
