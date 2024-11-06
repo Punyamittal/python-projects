@@ -1,0 +1,12 @@
+#dictionary
+import nltk
+from nltk.corpus import wordnet as wn
+nltk.download('wordnet')
+def word_meaning(word):
+    synsets = wn.synsets(word)
+    if synsets:
+        return synsets[0].definition()
+    else:
+        return "No definition found."
+w=input("enter word")
+print(f"{w}: {word_meaning(w)}")
