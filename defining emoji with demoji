@@ -1,0 +1,5 @@
+import demoji
+text=input("enter the text with emojis")
+h=demoji.findall(text)
+for i in h:
+    print(f"{i}: {h.get(i)}")
