@@ -1,0 +1,18 @@
+#master mind game
+x=list(map(int, input("player 1 may enter the number:").split()))
+t=0
+a=0
+s=0
+while t==0:
+    y=list(map(int, input("player 2 may enter the number").split()))
+    s+=1
+    for i in range(0,len(x)):
+        if x[i]==y[i]:
+            a+=1
+    if a==4:
+        print("the numbers matched")
+        print(f"you took {s} turns to guess")
+        t=1
+    else:
+        print(f"only {a} digits are true")
+        a=0
