@@ -1,0 +1,29 @@
+#FLAMES
+l1=[]
+n1=input()
+for i in n1:
+    l1.append(i)
+l2=[]
+n2=input()
+for i in n2:
+    l2.append(i)
+l1.extend(l2)
+l1=list(set(l1))
+len_lst=len(l1)
+flames=["F","L","A","M",'E','S']
+for i in range(6,1,-1):
+    s=len_lst%i
+    flames.pop(s)
+print(flames)
+if flames[0]=="F":
+    print("Friends")
+if flames[0]=="L":
+    print("Lust")
+if flames[0]=="A":
+    print("Affection")
+if flames[0]=="M":
+    print("Marriage")
+if flames[0]=="E":
+    print("Enemy")
+if flames[0]=="S":
+    print("Soulmates")
