@@ -1,0 +1,4 @@
+import pyscreenshot
+img=grab()
+img.show()
+img.save("C:/Users/punya mittal/Documents/shree.png")
